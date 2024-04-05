@@ -1,0 +1,1433 @@
+{
+    "rooms": [
+        {
+            "name": "Esszimmer",
+            "type": "diningroom",
+            "index": 1,
+            "order": 1
+        },
+        {
+            "name": "Schlafzimmer",
+            "type": "bedroom",
+            "index": 2,
+            "order": 3
+        },
+        {
+            "name": "Küche",
+            "type": "kitchen",
+            "index": 3,
+            "order": 2
+        },
+        {
+            "name": "Wohnzimmer",
+            "type": "livingroom",
+            "index": 4,
+            "order": 0
+        },
+        {
+            "name": "Kinderzimmer Lotta",
+            "type": "babyroom",
+            "index": 6,
+            "order": 4
+        },
+        {
+            "name": "Badezimmer",
+            "type": "bathroom",
+            "index": 7,
+            "order": 6
+        },
+        {
+            "name": "Draussen",
+            "type": "yard",
+            "index": 8,
+            "order": 13
+        },
+        {
+            "name": "Garderobe",
+            "type": "entrance",
+            "index": 9,
+            "order": 9
+        },
+        {
+            "name": "Gästebad",
+            "type": "bathroom",
+            "index": 10,
+            "order": 8
+        },
+        {
+            "name": "Kinderzimmer Emil",
+            "type": "childroom",
+            "index": 11,
+            "order": 5
+        },
+        {
+            "name": "Einliegerwohnung",
+            "type": "office",
+            "index": 12,
+            "order": 7
+        },
+        {
+            "name": "Gästeklo",
+            "type": "toilet",
+            "index": 13,
+            "order": 11
+        },
+        {
+            "name": "Waschküche",
+            "type": "wash",
+            "index": 14,
+            "order": 12
+        },
+        {
+            "name": "Treppenhaus",
+            "type": "floor",
+            "index": 15,
+            "order": 10
+        },
+        {
+            "name": "Heizung",
+            "type": "guestroom",
+            "index": 16
+        }
+    ],
+    "devices": [
+        {
+            "name": "Licht",
+            "room": 2,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_dimmer",
+                "vendor": "eltako",
+                "address": "0593EAA4",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57382",
+                "deviceText": "FUD61NPN-230V",
+                "br": "61",
+                "sid": "02",
+                "__neoIndex": 2,
+                "_isFav": false,
+                "_favOrder": 7
+            },
+            "index": 2,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Fenster",
+            "room": 3,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "0420D83B",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57385",
+                "sid": "0B",
+                "br": "62",
+                "_isFav": false,
+                "_favOrder": 5,
+                "__neoIndex": 14,
+                "_target": "shutter"
+            },
+            "index": 14,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Fenster",
+            "room": 6,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "0421480D",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57386",
+                "sid": "0C",
+                "br": "62",
+                "__neoIndex": 15,
+                "_isFav": false,
+                "_favOrder": 6
+            },
+            "index": 15,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Fenster rechts",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "0420C93E",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57388",
+                "sid": "0E",
+                "br": "62",
+                "_isFav": false,
+                "_favOrder": 3,
+                "__neoIndex": 17
+            },
+            "index": 17,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 4
+        },
+        {
+            "name": "Balkontür Kontakt",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "a5-14-09",
+                "vendor": "eltako",
+                "address": "059EBA52",
+                "gateway": 1,
+                "virtual": false,
+                "sid": "12",
+                "__neoIndex": 21,
+                "_isFav": true,
+                "_favOrder": 5,
+                "_target": "door"
+            },
+            "index": 21,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 6
+        },
+        {
+            "name": "Wetterstation",
+            "room": 8,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_weather",
+                "vendor": "eltako",
+                "address": "059C05C3",
+                "gateway": 1,
+                "virtual": false,
+                "deviceText": "FWS61-24DC",
+                "br": 61,
+                "sid": "14",
+                "_target": "weatherstation",
+                "_isFav": true,
+                "_favOrder": 0,
+                "__neoIndex": 23
+            },
+            "index": 23,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Licht",
+            "room": 9,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "0421A215",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5738B",
+                "sid": "16",
+                "_target": "light",
+                "br": "62",
+                "_onForTime": "0",
+                "_isFav": false,
+                "_favOrder": 9,
+                "__neoIndex": 25
+            },
+            "index": 25,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Licht",
+            "room": 6,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_dimmer",
+                "vendor": "eltako",
+                "address": "0421DE53",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57389",
+                "sid": "19",
+                "_target": "light",
+                "br": "62",
+                "_isFav": false,
+                "_favOrder": 8,
+                "__neoIndex": 28
+            },
+            "index": 28,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Licht",
+            "room": 11,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_dimmer",
+                "vendor": "eltako",
+                "address": "0421CFA0",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5738F",
+                "sid": "1B",
+                "_target": "light",
+                "br": "62",
+                "__neoIndex": 31
+            },
+            "index": 31,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Terrassentür Kontakt",
+            "room": 12,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "a5-14-09",
+                "vendor": "eltako",
+                "address": "051EF05A",
+                "gateway": 1,
+                "virtual": false,
+                "sid": "1F",
+                "_target": "door",
+                "__neoIndex": 39,
+                "_isFav": true,
+                "_favOrder": 6
+            },
+            "index": 39,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 2
+        },
+        {
+            "name": "Licht",
+            "room": 3,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "0421A17D",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5738A",
+                "sid": "17",
+                "_target": "light",
+                "br": "62",
+                "_onForTime": "0",
+                "_isFav": false,
+                "__neoIndex": 42
+            },
+            "index": 42,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Heizkörper",
+            "room": 13,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "a5-20-04",
+                "vendor": "eltako",
+                "address": "0193AF29",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57387",
+                "sid": "20",
+                "_target": "heater",
+                "__neoIndex": 43
+            },
+            "index": 43,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Heizkörper",
+            "room": 15,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "a5-20-04",
+                "vendor": "eltako",
+                "address": "01940794",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5738C",
+                "sid": "13",
+                "_target": "heater",
+                "__neoIndex": 44
+            },
+            "index": 44,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 2
+        },
+        {
+            "name": "Fenster",
+            "room": 10,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "042250F7",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57395",
+                "sid": "04",
+                "_target": "shutter",
+                "br": "62",
+                "__neoIndex": 48
+            },
+            "index": 48,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Fenster rechts",
+            "room": 14,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "0422514B",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57397",
+                "sid": "05",
+                "_target": "shutter",
+                "br": "62",
+                "__neoIndex": 49
+            },
+            "index": 49,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Fenster links",
+            "room": 14,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "04225BF6",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57398",
+                "sid": "06",
+                "_target": "shutter",
+                "br": "62",
+                "__neoIndex": 50
+            },
+            "index": 50,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 2
+        },
+        {
+            "name": "Thermostat",
+            "room": 7,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_futh_old",
+                "vendor": "eltako",
+                "address": "FFB9A681",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57399",
+                "deviceText": "FUTH55D / FUTH65D vor 17/19",
+                "br": "futh",
+                "sid": "07",
+                "_target": "heater",
+                "__neoIndex": 51
+            },
+            "index": 51,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Raumsensor",
+            "room": 16,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "a5-04-02",
+                "vendor": "eltako",
+                "address": "05A1F6CF",
+                "gateway": 1,
+                "virtual": false,
+                "sid": "0F",
+                "_target": "temp",
+                "__neoIndex": 53
+            },
+            "index": 53,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Terrassentür",
+            "room": 12,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "04225C7E",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC57394",
+                "sid": "11",
+                "_target": "shutter",
+                "br": "62",
+                "__neoIndex": 55
+            },
+            "index": 55,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Fenster",
+            "room": 12,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "04224F32",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5739B",
+                "sid": "18",
+                "_target": "shutter",
+                "br": "62",
+                "__neoIndex": 57
+            },
+            "index": 57,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Thermostat",
+            "room": 6,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_futh",
+                "vendor": "eltako",
+                "address": "FFF47C01",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5739F",
+                "deviceText": "FUTH55D / FUTH65D ab 17/19",
+                "br": "futh",
+                "sid": "1C",
+                "_target": "heater",
+                "__neoIndex": 62
+            },
+            "index": 62,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 2
+        },
+        {
+            "name": "Pendelleuchte",
+            "room": 1,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "04240A8D",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5739C",
+                "sid": "25",
+                "_target": "light",
+                "br": "62",
+                "_onForTime": "0",
+                "__neoIndex": 64
+            },
+            "index": 64,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Thermostat",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_thermo",
+                "vendor": "eltako",
+                "address": "FFC534E8",
+                "gateway": 1,
+                "virtual": false,
+                "sid": "03",
+                "_target": "temp",
+                "__neoIndex": 65
+            },
+            "index": 65,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 8
+        },
+        {
+            "name": "Thermostat",
+            "room": 2,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_futh",
+                "vendor": "eltako",
+                "address": "FFF0FE01",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5739D",
+                "deviceText": "FUTH ab 17/19",
+                "br": "futh",
+                "sid": "15",
+                "_target": "heater",
+                "__neoIndex": 66
+            },
+            "index": 66,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 2
+        },
+        {
+            "name": "Deckenleuchte",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_dimmer",
+                "vendor": "eltako",
+                "address": "0423B5D6",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573A5",
+                "sid": "29",
+                "_target": "light",
+                "br": "62",
+                "__neoIndex": 71
+            },
+            "index": 71,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Thanos Spange",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_button1",
+                "vendor": "eltako",
+                "address": "FFC534A6",
+                "gateway": 1,
+                "virtual": false,
+                "sid": "2A",
+                "_target": "button",
+                "__neoIndex": 72
+            },
+            "index": 72,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 7
+        },
+        {
+            "name": "Heizkörper",
+            "room": 9,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "a5-20-04",
+                "vendor": "eltako",
+                "address": "0193C735",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573A6",
+                "sid": "08",
+                "_target": "heater",
+                "__neoIndex": 73
+            },
+            "index": 73,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Fenster",
+            "room": 2,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "0420C9E5",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5739A",
+                "sid": "0D",
+                "_target": "shutter",
+                "br": "62",
+                "__neoIndex": 74
+            },
+            "index": 74,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Stehlampe",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_dimmer",
+                "vendor": "eltako",
+                "address": "042409A9",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC5738E",
+                "deviceText": "FD62NPN",
+                "sid": "24",
+                "_target": "light",
+                "br": "62",
+                "__neoIndex": 75
+            },
+            "index": 75,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "LED Band Decke",
+            "room": 15,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "0426548E",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573A3",
+                "deviceText": "FL62",
+                "sid": "2D",
+                "_target": "light",
+                "br": "62",
+                "_onForTime": "0",
+                "__neoIndex": 76
+            },
+            "index": 76,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Stufenleuchten",
+            "room": 15,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "0423B3D2",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573A7",
+                "deviceText": "FL62",
+                "sid": "2E",
+                "_target": "light",
+                "br": "62",
+                "_onForTime": "0",
+                "__neoIndex": 77
+            },
+            "index": 77,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Heizung",
+            "room": 16,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_fsr61va",
+                "vendor": "eltako",
+                "address": "FF85F280",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573A8",
+                "deviceText": "FSR61VA-10A",
+                "br": "61",
+                "sid": "2B",
+                "_target": "meter",
+                "__neoIndex": 78
+            },
+            "index": 78,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 3
+        },
+        {
+            "name": "Funksteckdose",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "05934606",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573A9",
+                "deviceText": "FSLA-230V",
+                "sid": "01",
+                "_target": "switch",
+                "__neoIndex": 80
+            },
+            "index": 80,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 5
+        },
+        {
+            "name": "Fenster",
+            "room": 1,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "04213FB7",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573AA",
+                "deviceText": "FJ62NP",
+                "sid": "09",
+                "_target": "shutter",
+                "br": "62",
+                "__neoIndex": 81
+            },
+            "index": 81,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Fenster links",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "042140CB",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573AB",
+                "deviceText": "FJ62NP",
+                "sid": "0A",
+                "_target": "shutter",
+                "br": "62",
+                "__neoIndex": 82
+            },
+            "index": 82,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 2
+        },
+        {
+            "name": "Balkontür",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_blind",
+                "vendor": "eltako",
+                "address": "0414A2C6",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573AC",
+                "deviceText": "FJ62NP",
+                "sid": "10",
+                "_target": "shutter",
+                "br": "62",
+                "__neoIndex": 83
+            },
+            "index": 83,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 3
+        },
+        {
+            "name": "Thanos Thermostat",
+            "room": 4,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_ftaf",
+                "vendor": "eltako",
+                "address": "FF92CB83",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573AD",
+                "deviceText": "FTAF",
+                "br": "futh",
+                "sid": "26",
+                "_target": "heater",
+                "__neoIndex": 84
+            },
+            "index": 84,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 5
+        },
+        {
+            "name": "Thanos Thermostat",
+            "room": 3,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_ftaf",
+                "vendor": "eltako",
+                "address": "FF92CB86",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573AE",
+                "deviceText": "FTAF",
+                "br": "futh",
+                "sid": "27",
+                "_target": "heater",
+                "__neoIndex": 85
+            },
+            "index": 85,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 3
+        },
+        {
+            "name": "Thermostat",
+            "room": 11,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_futh",
+                "vendor": "eltako",
+                "address": "FFF46F01",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573AF",
+                "deviceText": "FUTH ab 17/19",
+                "br": "futh",
+                "sid": "21",
+                "_target": "heater",
+                "__neoIndex": 86
+            },
+            "index": 86,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Thermostat",
+            "room": 12,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_ftaf",
+                "vendor": "eltako",
+                "address": "FF92CB84",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573B1",
+                "deviceText": "FTAF",
+                "br": "futh",
+                "sid": "1D",
+                "_target": "heater",
+                "__neoIndex": 91
+            },
+            "index": 91,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 3
+        },
+        {
+            "name": "Thermostat",
+            "room": 14,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_ftaf",
+                "vendor": "eltako",
+                "address": "FF92CB8A",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573B2",
+                "deviceText": "FTAF",
+                "br": "futh",
+                "sid": "28",
+                "_target": "heater",
+                "__neoIndex": 92
+            },
+            "index": 92,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 0
+        },
+        {
+            "name": "Thermostat",
+            "room": 10,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_ftaf",
+                "vendor": "eltako",
+                "address": "FF92CB8B",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573B3",
+                "deviceText": "FTAF",
+                "br": "futh",
+                "sid": "1A",
+                "_target": "heater",
+                "__neoIndex": 93
+            },
+            "index": 93,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Garagentor Kontakt",
+            "room": 8,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_contact",
+                "vendor": "eltako",
+                "address": "0582DEFE",
+                "gateway": 1,
+                "virtual": false,
+                "deviceText": "FFKB / TF-FKB",
+                "sid": "1E",
+                "_target": "door",
+                "__neoIndex": 94
+            },
+            "index": 94,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 4
+        },
+        {
+            "name": "Garagentor",
+            "room": 8,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_fgtz",
+                "vendor": "eltako",
+                "address": "0420D6E9",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573B4",
+                "deviceText": "FGTZ-230V",
+                "sid": "22",
+                "_target": "garage",
+                "_isFav": true,
+                "_favOrder": 4,
+                "__neoIndex": 95
+            },
+            "index": 95,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 2
+        },
+        {
+            "name": "PV-Anlage",
+            "room": 8,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_fsdg14",
+                "vendor": "eltako",
+                "address": "FF92CB8D",
+                "gateway": 1,
+                "virtual": false,
+                "deviceText": "FSDG14",
+                "sid": "2F",
+                "_target": "meter",
+                "br": "14",
+                "_isFav": true,
+                "_favOrder": 1,
+                "__neoIndex": 97
+            },
+            "index": 97,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Vorgarten Beleuchtung",
+            "room": 8,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "0426BEC1",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573B5",
+                "deviceText": "FL62",
+                "sid": "31",
+                "_target": "light",
+                "br": "62",
+                "_onForTime": "0",
+                "__neoIndex": 99
+            },
+            "index": 99,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 3
+        },
+        {
+            "name": "Stromzähler",
+            "room": 15,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_fsdg14",
+                "vendor": "eltako",
+                "address": "FF92CB8E",
+                "gateway": 1,
+                "virtual": false,
+                "deviceText": "FSDG14",
+                "sid": "30",
+                "_target": "meter",
+                "br": "14",
+                "_isFav": true,
+                "_favOrder": 2,
+                "__neoIndex": 100
+            },
+            "index": 100,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 3
+        },
+        {
+            "name": "Heizstab",
+            "room": 16,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_fsdg14",
+                "vendor": "eltako",
+                "address": "FF92CB8F",
+                "gateway": 1,
+                "virtual": false,
+                "deviceText": "FSDG14",
+                "sid": "23",
+                "_target": "meter",
+                "br": "14",
+                "_isFav": true,
+                "_favOrder": 3,
+                "__neoIndex": 101
+            },
+            "index": 101,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 2
+        },
+        {
+            "name": "Bewegungsmelder",
+            "room": 9,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_motion2",
+                "vendor": "eltako",
+                "address": "059A82F6",
+                "gateway": 1,
+                "virtual": false,
+                "deviceText": "FBH65SB / TF-BHSB (FBH-Modus)",
+                "sid": "32",
+                "_target": "motion",
+                "__neoIndex": 102
+            },
+            "index": 102,
+            "cloud": {
+                "enabled": true
+            }
+        },
+        {
+            "name": "Warmwasser",
+            "room": 16,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "a5-04-02",
+                "vendor": "eltako",
+                "address": "FF92CB85",
+                "gateway": 1,
+                "virtual": false,
+                "deviceText": "FTFSB / FTFB",
+                "sid": "34",
+                "_target": "temp"
+            },
+            "index": 103,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Licht",
+            "room": 13,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "04277C53",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573B7",
+                "deviceText": "FL62",
+                "sid": "35",
+                "_target": "light",
+                "br": "62",
+                "_onForTime": "0"
+            },
+            "index": 104,
+            "cloud": {
+                "enabled": true
+            }
+        },
+        {
+            "name": "Deckenlampe",
+            "room": 7,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "04273319",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573B8",
+                "deviceText": "FL62",
+                "sid": "36",
+                "_target": "light",
+                "br": "62",
+                "_onForTime": "0"
+            },
+            "index": 105,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 1
+        },
+        {
+            "name": "Spiegellampe",
+            "room": 7,
+            "info": {
+                "op": 0,
+                "sys": "aio",
+                "type": "ENOCEAN",
+                "data": "eltako_tf_switch",
+                "vendor": "eltako",
+                "address": "04277C4E",
+                "gateway": 1,
+                "virtual": false,
+                "senderID": "FFC573B9",
+                "deviceText": "FL62",
+                "sid": "37",
+                "_target": "light",
+                "br": "62",
+                "_onForTime": "0"
+            },
+            "index": 106,
+            "cloud": {
+                "enabled": true
+            },
+            "order": 2
+        }
+    ],
+    "gateways": [
+        {
+            "name": "MiniSafe2",
+            "index": 1,
+            "info": {
+                "sn": "255.255.255.0",
+                "dns": "192.168.178.1",
+                "mac": "c8-f5-d6-c0-03-8a",
+                "hwv": "C2",
+                "vid": "000C",
+                "sys": "aio",
+                "name": "MiniSafe2",
+                "dhcp": "TRUE",
+                "server": "m1.cloud.eltako.com:80",
+                "version": "C2",
+                "gateway_vendor": "mediola",
+                "firmware": "1.25.2",
+                "sid": "1D789524603878BB1C19B446B4735963",
+                "_cloudAccessActive": true,
+                "__neoIndex": 1,
+                "password": "<>",
+                "_primary": true,
+                "_rcs": true,
+                "ip": "192.168.178.58",
+                "_showHiddenRules": false,
+                "_token": "736ACBC068B4F43AE0FB7AE9B0515C94B2ABF6C24B2660B33137E3496B679F22"
+            },
+            "tasks": []
+        },
+        {
+            "name": "CloudService",
+            "index": 2,
+            "info": {
+                "sys": "cloudservice",
+                "username": ","ip":"m0.cloud.eltako.com","moduleInfo":{"hue":{"domain":"hue.cloud.eltako.com: 443"},"doorbird":{"domain":"doorbird.cloud.eltako.com: 443"}}}}],"qrcodes":[{"name":"Rolladen Esszimmer ","vendor":"eltako","code":"30S000004213FB7+1P000D0000046F","index":1}],"actions":[{"id":3,"gateway":1,"name":"Thermostat manuell","fav":false,"order":2,"index":1},{"id":4,"gateway":1,"name":"Rolläden UG hoch","fav":false,"order":3,"index":2},{"id":5,"gateway":1,"name":"Rolläden UG runter","fav":false,"order":4,"index":3},{"id":1,"gateway":1,"name":"Szene 1","fav":false,"order":5,"index":4},{"id":2,"gateway":1,"name":"Szene 2","fav":false,"order":6,"index":5}]}

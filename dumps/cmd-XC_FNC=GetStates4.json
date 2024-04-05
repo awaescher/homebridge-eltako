@@ -1,0 +1,899 @@
+{
+    "XC_SUC": [
+        {
+            "type": "ENOCEAN",
+            "sid": "34",
+            "adr": "FF92CB85",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "a5-04-02",
+            "state": {
+                "rssiPercentage": 100,
+                "temperature": 43.6,
+                "humidity": 100
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "35",
+            "adr": "04277C53",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B7",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 59,
+                "state": "off",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "36",
+            "adr": "04273319",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B8",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 84,
+                "state": "off",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "37",
+            "adr": "04277C4E",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B9",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 79,
+                "state": "off",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "33",
+            "adr": "00000033",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B6",
+            "virtual": false,
+            "data": "eltako_dimmer",
+            "state": {
+                "rssiPercentage": 0,
+                "timeout": false,
+                "state": null,
+                "level": null,
+                "ramp_time": 0,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "2E",
+            "adr": "0423B3D2",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573A7",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 100,
+                "state": "off",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "2D",
+            "adr": "0426548E",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573A3",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 95,
+                "state": "on",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "26",
+            "adr": "FF92CB83",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573AD",
+            "virtual": false,
+            "data": "eltako_ftaf",
+            "state": {
+                "rssiPercentage": 100,
+                "mode": "auto",
+                "temperature": 21.5,
+                "setpoint": 16.5,
+                "actualSetPoint": 16.5,
+                "state": 16.5,
+                "switchState": null
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "2B",
+            "adr": "FF85F280",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573A8",
+            "virtual": false,
+            "data": "eltako_fsr61va",
+            "state": {
+                "rssiPercentage": 50,
+                "timeout": false,
+                "switchState": null,
+                "power": 0.0,
+                "state": null
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "2A",
+            "adr": "FFC534A6",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "eltako_button1",
+            "state": {
+                "rssiPercentage": 50,
+                "button": "released"
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "29",
+            "adr": "0423B5D6",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573A5",
+            "virtual": false,
+            "data": "eltako_tf_dimmer",
+            "state": {
+                "rssiPercentage": 33,
+                "timeout": false,
+                "state": "off",
+                "level": 0,
+                "ramp_time": 0,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "25",
+            "adr": "04240A8D",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5739C",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 59,
+                "state": "off",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "24",
+            "adr": "042409A9",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5738E",
+            "virtual": false,
+            "data": "eltako_tf_dimmer",
+            "state": {
+                "rssiPercentage": 37,
+                "timeout": false,
+                "state": "on",
+                "level": 35,
+                "ramp_time": 0,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "01",
+            "adr": "05934606",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573A9",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 0,
+                "state": "off",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "22",
+            "adr": "0420D6E9",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B4",
+            "virtual": false,
+            "data": "eltako_fgtz",
+            "state": {
+                "rssiPercentage": 59,
+                "doorState": "closed"
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "02",
+            "adr": "0593EAA4",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57382",
+            "virtual": false,
+            "data": "eltako_dimmer",
+            "state": {
+                "rssiPercentage": 84,
+                "timeout": false,
+                "state": "off",
+                "level": 0,
+                "ramp_time": 0,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "21",
+            "adr": "FFF46F01",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573AF",
+            "virtual": false,
+            "data": "eltako_futh",
+            "state": {
+                "rssiPercentage": 79,
+                "mode": "auto",
+                "temperature": 19.0,
+                "setpoint": 18.5,
+                "actualSetPoint": 18.5,
+                "state": 18.5,
+                "humidity": 50
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "20",
+            "adr": "0193AF29",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57387",
+            "virtual": false,
+            "data": "a5-20-04",
+            "state": {
+                "rssiPercentage": 37,
+                "lowbat": false,
+                "temperature": 18.1,
+                "valve": 0,
+                "setpoint": 17.0,
+                "feed_temperature": 21.0,
+                "pending": false,
+                "error": "no_error",
+                "measurement": "active",
+                "button_lock": "unlocked",
+                "display": 0,
+                "wakeup_cycle": 9
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "1F",
+            "adr": "051EF05A",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "a5-14-09",
+            "state": {
+                "rssiPercentage": 26,
+                "state": "closed",
+                "lowbat": false,
+                "window": "closed",
+                "voltage": 2.9
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "1A",
+            "adr": "FF92CB8B",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B3",
+            "virtual": false,
+            "data": "eltako_ftaf",
+            "state": {
+                "rssiPercentage": 100,
+                "mode": "auto",
+                "temperature": 16.0,
+                "setpoint": 14.0,
+                "actualSetPoint": 14.0,
+                "state": 14.0,
+                "switchState": null
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "1D",
+            "adr": "FF92CB84",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B1",
+            "virtual": false,
+            "data": "eltako_ftaf",
+            "state": {
+                "rssiPercentage": 100,
+                "mode": "auto",
+                "temperature": 17.0,
+                "setpoint": 14.0,
+                "actualSetPoint": 14.0,
+                "state": 14.0,
+                "switchState": null
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "1C",
+            "adr": "FFF47C01",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5739F",
+            "virtual": false,
+            "data": "eltako_futh",
+            "state": {
+                "rssiPercentage": 50,
+                "mode": "auto",
+                "temperature": 18.5,
+                "setpoint": 18.5,
+                "actualSetPoint": 18.5,
+                "state": 18.5,
+                "humidity": 47
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "1B",
+            "adr": "0421CFA0",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5738F",
+            "virtual": false,
+            "data": "eltako_tf_dimmer",
+            "state": {
+                "rssiPercentage": 71,
+                "timeout": false,
+                "state": "off",
+                "level": 0,
+                "ramp_time": 0,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "1E",
+            "adr": "0582DEFE",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "eltako_tf_contact",
+            "state": {
+                "rssiPercentage": 31,
+                "voltage": 2.9,
+                "contact": "closed",
+                "lowbat": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "19",
+            "adr": "0421DE53",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57389",
+            "virtual": false,
+            "data": "eltako_tf_dimmer",
+            "state": {
+                "rssiPercentage": 73,
+                "timeout": false,
+                "state": "off",
+                "level": 0,
+                "ramp_time": 0,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "18",
+            "adr": "04224F32",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5739B",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 28,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 19,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "14",
+            "adr": "059C05C3",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "eltako_weather",
+            "state": {
+                "rssiPercentage": 48,
+                "timeout": false,
+                "illumination": 0.0,
+                "temperature": 8.9,
+                "wind": 0.0,
+                "rain_state": false,
+                "s1": 0.0,
+                "s2": 0.0,
+                "s3": 0.0
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "17",
+            "adr": "0421A17D",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5738A",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 53,
+                "state": "off",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "16",
+            "adr": "0421A215",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5738B",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 59,
+                "state": "off",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "15",
+            "adr": "FFF0FE01",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5739D",
+            "virtual": false,
+            "data": "eltako_futh",
+            "state": {
+                "rssiPercentage": 73,
+                "mode": "auto",
+                "temperature": 19.0,
+                "setpoint": 18.5,
+                "actualSetPoint": 18.5,
+                "state": 18.5,
+                "humidity": 52
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "13",
+            "adr": "01940794",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5738C",
+            "virtual": false,
+            "data": "a5-20-04",
+            "state": {
+                "rssiPercentage": 33,
+                "lowbat": false,
+                "temperature": 16.4,
+                "valve": 0,
+                "setpoint": 15.5,
+                "feed_temperature": 20.0,
+                "pending": false,
+                "error": "no_error",
+                "measurement": "active",
+                "button_lock": "unlocked",
+                "display": 0,
+                "wakeup_cycle": 9
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "12",
+            "adr": "059EBA52",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "a5-14-09",
+            "state": {
+                "rssiPercentage": 31,
+                "state": "closed",
+                "lowbat": false,
+                "window": "closed",
+                "voltage": 3.0
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "11",
+            "adr": "04225C7E",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57394",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 20,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 26,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "09",
+            "adr": "04213FB7",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573AA",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 28,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 19,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "0F",
+            "adr": "05A1F6CF",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "a5-04-02",
+            "state": {
+                "rssiPercentage": 26,
+                "temperature": 18.4,
+                "humidity": 62
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "08",
+            "adr": "0193C735",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573A6",
+            "virtual": false,
+            "data": "a5-20-04",
+            "state": {
+                "rssiPercentage": 53,
+                "lowbat": false,
+                "temperature": 18.9,
+                "valve": 0,
+                "setpoint": 15.0,
+                "feed_temperature": 20.0,
+                "pending": false,
+                "error": "no_error",
+                "measurement": "active",
+                "button_lock": "unlocked",
+                "display": 0,
+                "wakeup_cycle": 9
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "07",
+            "adr": "FFB9A681",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57399",
+            "virtual": false,
+            "data": "eltako_futh_old",
+            "state": {
+                "rssiPercentage": 77,
+                "mode": "manu",
+                "temperature": 20.5,
+                "setpoint": 18.0,
+                "actualSetPoint": 18.0,
+                "state": 18.0,
+                "humidity": 62
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "0E",
+            "adr": "0420C93E",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57388",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 26,
+                "pos": 100,
+                "sync": false,
+                "rv": 200,
+                "rt": 19,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "06",
+            "adr": "04225BF6",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57398",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 17,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 16,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "05",
+            "adr": "0422514B",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57397",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 17,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 16,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "04",
+            "adr": "042250F7",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57395",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 26,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 13,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "03",
+            "adr": "FFC534E8",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573A1",
+            "virtual": false,
+            "data": "eltako_tf_thermo",
+            "state": {
+                "rssiPercentage": 55,
+                "temperature": 21.3,
+                "setpoint": 16.4
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "0D",
+            "adr": "0420C9E5",
+            "deviceProtocol": "normal",
+            "senderID": "FFC5739A",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 59,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 20,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "0C",
+            "adr": "0421480D",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57386",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 28,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 19,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "0B",
+            "adr": "0420D83B",
+            "deviceProtocol": "normal",
+            "senderID": "FFC57385",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 44,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 19,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "0A",
+            "adr": "042140CB",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573AB",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 39,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 19,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "10",
+            "adr": "0414A2C6",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573AC",
+            "virtual": false,
+            "data": "eltako_tf_blind",
+            "state": {
+                "rssiPercentage": 37,
+                "pos": 100,
+                "sync": true,
+                "rv": 200,
+                "rt": 25,
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "27",
+            "adr": "FF92CB86",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573AE",
+            "virtual": false,
+            "data": "eltako_ftaf",
+            "state": {
+                "rssiPercentage": 100,
+                "mode": "auto",
+                "temperature": 20.0,
+                "setpoint": 19.0,
+                "actualSetPoint": 19.0,
+                "state": 19.0,
+                "switchState": null
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "23",
+            "adr": "FF92CB8F",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "eltako_fsdg14",
+            "state": {
+                "rssiPercentage": 100,
+                "power": 0.0,
+                "energy": 23100.0,
+                "energyNT": 600.0,
+                "ongoing_energy_usage": 23100.0
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "28",
+            "adr": "FF92CB8A",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B2",
+            "virtual": false,
+            "data": "eltako_ftaf",
+            "state": {
+                "rssiPercentage": 100,
+                "mode": "auto",
+                "temperature": 16.5,
+                "setpoint": 14.0,
+                "actualSetPoint": 14.0,
+                "state": 14.0,
+                "switchState": null
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "2C",
+            "adr": "FF92CB8C:0",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B4",
+            "virtual": false,
+            "data": "eltako_fgtz",
+            "state": {
+                "rssiPercentage": 100,
+                "doorState": null
+            },
+            "mainId": "22"
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "2F",
+            "adr": "FF92CB8D",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "eltako_fsdg14",
+            "state": {
+                "rssiPercentage": 100,
+                "power": 0.0,
+                "energy": 469100.0,
+                "energyNT": 2299.99,
+                "ongoing_energy_usage": 114700.0
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "30",
+            "adr": "FF92CB8E",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "eltako_fsdg14",
+            "state": {
+                "rssiPercentage": 100,
+                "power": 357.0,
+                "energy": 11739300.0,
+                "energyNT": 5600.0,
+                "ongoing_energy_usage": 601400.0
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "31",
+            "adr": "0426BEC1",
+            "deviceProtocol": "normal",
+            "senderID": "FFC573B5",
+            "virtual": false,
+            "data": "eltako_tf_switch",
+            "state": {
+                "rssiPercentage": 59,
+                "state": "on",
+                "lock": false
+            }
+        },
+        {
+            "type": "ENOCEAN",
+            "sid": "32",
+            "adr": "059A82F6",
+            "deviceProtocol": "normal",
+            "virtual": false,
+            "data": "eltako_motion2",
+            "state": {
+                "rssiPercentage": 44,
+                "lowbat": false,
+                "voltage": 2.8,
+                "illumination": 0.0,
+                "state": "off"
+            }
+        }
+    ]
+}

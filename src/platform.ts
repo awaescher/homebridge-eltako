@@ -179,11 +179,13 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
             break;
           }
           case 'eltako_switch':
+          case 'eltako_tf_switch':
           case 'eltako_fsr14': {
             instance = new EltakoSwitchAccessory(this, existingAccessory);
             break;
           }
-          case 'eltako_dimmer': {
+          case 'eltako_dimmer':
+          case 'eltako_tf_dimmer': {
             instance = new EltakoDimmerAccessory(this, existingAccessory);
             break;
           }
@@ -191,7 +193,10 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
             instance = new EltakoLightSensorAccessory(this, existingAccessory);
             break;
           }
-          case 'eltako_fhk': {
+          case 'eltako_fhk':
+          case 'eltako_ftaf':
+          case 'eltako_futh_old':
+          case 'eltako_futh': {
             instance = new EltakoThermostatAccessory(this, existingAccessory);
             break;
           }
@@ -233,11 +238,13 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
             break;
           }
           case 'eltako_switch':
+          case 'eltako_tf_switch':
           case 'eltako_fsr14': {
             instance = new EltakoSwitchAccessory(this, accessory);
             break;
           }
-          case 'eltako_dimmer': {
+          case 'eltako_dimmer':
+          case 'eltako_tf_dimmer': {
             instance = new EltakoDimmerAccessory(this, accessory);
             break;
           }
@@ -245,7 +252,10 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
             instance = new EltakoLightSensorAccessory(this, accessory);
             break;
           }
-          case 'eltako_fhk': {
+          case 'eltako_fhk':
+          case 'eltako_ftaf':
+          case 'eltako_futh_old':
+          case 'eltako_futh': {
             instance = new EltakoThermostatAccessory(this, accessory);
             break;
           }

@@ -4,11 +4,16 @@ import { IUpdatableAccessory } from './IUpdatableAccessory';
 
 export class EltakoThermostatAccessory implements IUpdatableAccessory {
   private service: Service;
+  private hasHeatingCoolingState: boolean;
+  private hasHumiditySensor: boolean;
 
   constructor(
     private readonly platform: EltakoMiniSafe2Platform,
     public readonly accessory: PlatformAccessory,
   ) {
+    const deviceType = accessory.context.device.info.data;
+    this.hasHeatingCoolingState = deviceType === 'eltako_fhk';
+    this.hasHumiditySensor = deviceType === 'eltako_futh' || deviceType === 'eltako_futh_old';
 
     this.accessory.getService(this.platform.Service.AccessoryInformation)!
       .setCharacteristic(this.platform.Characteristic.Manufacturer, accessory.context.device.info.vendor)
@@ -24,16 +29,18 @@ export class EltakoThermostatAccessory implements IUpdatableAccessory {
     this.service.getCharacteristic(this.platform.Characteristic.CurrentTemperature)
       .onGet(this.getCurrentTemperature.bind(this));
 
-    this.service.getCharacteristic(this.platform.Characteristic.CurrentHeatingCoolingState)
-      .onGet(this.getCurrentHeatingCoolingState.bind(this))
-      .onSet(this.setCurrentHeatingCoolingState.bind(this))
-      .setProps({
-        validValues: [
-          this.platform.Characteristic.CurrentHeatingCoolingState.OFF,
-          this.platform.Characteristic.CurrentHeatingCoolingState.HEAT,
-        ],
-        maxValue: this.platform.Characteristic.CurrentHeatingCoolingState.HEAT,
-      });
+    if (this.hasHeatingCoolingState) {
+      this.service.getCharacteristic(this.platform.Characteristic.CurrentHeatingCoolingState)
+        .onGet(this.getCurrentHeatingCoolingState.bind(this))
+        .onSet(this.setCurrentHeatingCoolingState.bind(this))
+        .setProps({
+          validValues: [
+            this.platform.Characteristic.CurrentHeatingCoolingState.OFF,
+            this.platform.Characteristic.CurrentHeatingCoolingState.HEAT,
+          ],
+          maxValue: this.platform.Characteristic.CurrentHeatingCoolingState.HEAT,
+        });
+    }
 
     this.service.getCharacteristic(this.platform.Characteristic.TargetHeatingCoolingState)
       .onGet(this.getTargetHeatingCoolingState.bind(this))
@@ -52,6 +59,11 @@ export class EltakoThermostatAccessory implements IUpdatableAccessory {
 
     this.service.getCharacteristic(this.platform.Characteristic.TemperatureDisplayUnits)
       .onGet(this.getTemperatureDisplayUnits.bind(this));
+
+    if (this.hasHumiditySensor) {
+      this.service.getCharacteristic(this.platform.Characteristic.CurrentRelativeHumidity)
+        .onGet(this.getCurrentRelativeHumidity.bind(this));
+    }
   }
 
   getCurrentTemperature(): CharacteristicValue {
@@ -98,6 +110,11 @@ export class EltakoThermostatAccessory implements IUpdatableAccessory {
     return this.platform.Characteristic.TemperatureDisplayUnits.CELSIUS;
   }
 
+  getCurrentRelativeHumidity(): CharacteristicValue {
+    const state = this.platform.deviceStateCache.find(s => s.sid === this.accessory.context.device.info.sid);
+    return state?.state?.humidity ?? 0;
+  }
+
   update() {
     this.service
       .getCharacteristic(this.platform.Characteristic.CurrentTemperature)
@@ -118,5 +135,11 @@ export class EltakoThermostatAccessory implements IUpdatableAccessory {
     this.service
       .getCharacteristic(this.platform.Characteristic.TemperatureDisplayUnits)
       .updateValue(this.getTemperatureDisplayUnits());
+
+    if (this.hasHumiditySensor) {
+      this.service
+        .getCharacteristic(this.platform.Characteristic.CurrentRelativeHumidity)
+        .updateValue(this.getCurrentRelativeHumidity());
+    }
   }
 }
