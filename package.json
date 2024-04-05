@@ -1,7 +1,7 @@
 {
   "displayName": "Homebridge Eltako for MiniSafe2",
   "name": "homebridge-eltako-minisafe2",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A Homebridge plugin to connect local Eltako installations to HomeKit. Requires a MiniSafe2.",
   "license": "Apache-2.0",
   "repository": {
