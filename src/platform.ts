@@ -3,6 +3,7 @@ import { API, DynamicPlatformPlugin, Logger, PlatformAccessory, PlatformConfig, 
 import { PLATFORM_NAME, PLUGIN_NAME } from './settings';
 import { EltakoBlindsAccessory } from './EltakoBlindsAccessory';
 import { EltakoContactAccessory } from './EltakoContactAccessory';
+import { EltakoMotionAccessory } from './EltakoMotionAccessory';
 import { EltakoDimmerAccessory } from './EltakoDimmerAccessory';
 import { EltakoLightSensorAccessory } from './EltakoLightSensorAccessory';
 import { EltakoSwitchAccessory } from './EltakoSwitchAccessory';
@@ -185,6 +186,12 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
             instance = new EltakoContactAccessory(this, existingAccessory);
             break;
           }
+          case 'eltako_motion':
+          case 'eltako_tf_motion':
+          case 'eltako_motion2': {
+            instance = new EltakoMotionAccessory(this, existingAccessory);
+            break;
+          }
           case 'eltako_switch':
           case 'eltako_tf_switch':
           case 'eltako_fsr14': {
@@ -248,6 +255,12 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
           case 'eltako_contact':
           case 'eltako_tf_contact': {
             instance = new EltakoContactAccessory(this, accessory);
+            break;
+          }
+          case 'eltako_motion':
+          case 'eltako_tf_motion':
+          case 'eltako_motion2': {
+            instance = new EltakoMotionAccessory(this, accessory);
             break;
           }
           case 'eltako_switch':

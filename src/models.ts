@@ -21,6 +21,7 @@ export class DeviceState {
   state?: string;
   operation_mode?: string;
   contact?: string;
+  motion?: string;
 }
 
 export interface Device {
