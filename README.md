@@ -43,11 +43,11 @@ Right now, the following devices are supported:
 |`eltako_blind` `eltako_tf_blind`| [Window Covering](https://developers.homebridge.io/#/service/WindowCovering)|🟢||
 |`eltako_contact` `eltako_tf_contact` `a5-14-09`|[Contact Sensor](https://developers.homebridge.io/#/service/ContactSensor)|🟢||
 |`eltako_dimmer` `eltako_tf_dimmer`|[Lightbulb](https://developers.homebridge.io/#/service/Lightbulb)|🟢||
-|`eltako_motion` `eltako_tf_motion` `eltako_motion2`|[Motion Sensor](https://developers.homebridge.io/#/service/MotionSensor)|🟡|`eltako_motion` and `eltako_motion2` only expose a `state` while `eltako_tf_motion` exposes a `motion`. Looking for feedback.|
+|`eltako_motion` `eltako_tf_motion` `eltako_motion2`|[Motion Sensor](https://developers.homebridge.io/#/service/MotionSensor)|🟢||
 |`eltako_switch` `eltako_tf_switch` `eltako_fsr14`|[Switch](https://developers.homebridge.io/#/service/Switch) or [Lightbulb](https://developers.homebridge.io/#/service/Lightbulb)|🟢|HomeKit service depending on the devices' `target`, which can be configured in the GFA5 app|
 |`a5-04-01` `a5-04-02` `a5-04-03`|[TemperatureSensor](https://developers.homebridge.io/#/service/TemperatureSensor) and [HumiditySensor](https://developers.homebridge.io/#/service/HumiditySensor)|🟢|[a5-04-02 tested successfully](https://github.com/awaescher/homebridge-eltako-minisafe2/issues/3#issuecomment-1872514207)
 |`eltako_tf_lux`|[Light sensor](https://developers.homebridge.io/#/service/LightSensor)|🟢|
-|`eltako_fhk` `eltako_ftaf` `eltako_futh` `eltako_futh_old`|[Thermostat](https://developers.homebridge.io/#/service/Thermostat)|🟢| Only `eltako_fhk` has a heating/cooling state. `eltako_futh` and `eltako_futh_old` also expose humidity values
+|`eltako_fhk` `eltako_ftaf` `eltako_futh` `eltako_futh_old` `a5-20-04` `eltako_tf_thermo`|[Thermostat](https://developers.homebridge.io/#/service/Thermostat)|🟢| Only `eltako_fhk` has a heating/cooling state. `eltako_futh` and `eltako_futh_old` also expose humidity values. `eltako_tf_thermo` can only show but not change values.
 |`eltako_weather`|-|⚪|Eltako uses weather data from [openweathermap.org](https://openweathermap.org). Use [homebridge-weather-plus](https://www.npmjs.com/package/homebridge-weather-plus) instead, as it makes use of the same data but offers many more features|
 
 I don't have any other devices to test. Donations welcome 😉

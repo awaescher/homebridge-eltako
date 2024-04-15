@@ -207,10 +207,12 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
             instance = new EltakoLightSensorAccessory(this, existingAccessory);
             break;
           }
+          case 'a5-20-04':
           case 'eltako_fhk':
           case 'eltako_ftaf':
           case 'eltako_futh_old':
-          case 'eltako_futh': {
+          case 'eltako_futh':
+          case 'eltako_tf_thermo': {
             instance = new EltakoThermostatAccessory(this, existingAccessory);
             break;
           }
@@ -278,10 +280,12 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
             instance = new EltakoLightSensorAccessory(this, accessory);
             break;
           }
+          case 'a5-20-04':
           case 'eltako_fhk':
           case 'eltako_ftaf':
           case 'eltako_futh_old':
-          case 'eltako_futh': {
+          case 'eltako_futh':
+          case 'eltako_tf_thermo': {
             instance = new EltakoThermostatAccessory(this, accessory);
             break;
           }
