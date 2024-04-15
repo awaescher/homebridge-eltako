@@ -20,6 +20,7 @@ export class DeviceState {
   level?: number;
   state?: string;
   operation_mode?: string;
+  contact?: string;
 }
 
 export interface Device {
