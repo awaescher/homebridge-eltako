@@ -44,6 +44,7 @@ Right now, the following devices are supported:
 |`eltako_contact` `eltako_tf_contact` `a5-14-09`|[Contact Sensor](https://developers.homebridge.io/#/service/ContactSensor)|🟢||
 |`eltako_dimmer` `eltako_tf_dimmer`|[Lightbulb](https://developers.homebridge.io/#/service/Lightbulb)|🟢||
 |`eltako_motion` `eltako_tf_motion` `eltako_motion2`|[Motion Sensor](https://developers.homebridge.io/#/service/MotionSensor)|🟢||
+|`eltako_fgtz`|[Garage Door Opener](https://developers.homebridge.io/#/service/GarageDoorOpener)|🟡|Target door state and obstacle detection is not implemented yet. There might also be a more granular state transition, but I have no documentation about this device|
 |`eltako_switch` `eltako_tf_switch` `eltako_fsr14`|[Switch](https://developers.homebridge.io/#/service/Switch) or [Lightbulb](https://developers.homebridge.io/#/service/Lightbulb)|🟢|HomeKit service depending on the devices' `target`, which can be configured in the GFA5 app|
 |`a5-04-01` `a5-04-02` `a5-04-03`|[TemperatureSensor](https://developers.homebridge.io/#/service/TemperatureSensor) and [HumiditySensor](https://developers.homebridge.io/#/service/HumiditySensor)|🟢|[a5-04-02 tested successfully](https://github.com/awaescher/homebridge-eltako-minisafe2/issues/3#issuecomment-1872514207)
 |`eltako_tf_lux`|[Light sensor](https://developers.homebridge.io/#/service/LightSensor)|🟢|

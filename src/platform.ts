@@ -5,6 +5,7 @@ import { EltakoBlindsAccessory } from './EltakoBlindsAccessory';
 import { EltakoContactAccessory } from './EltakoContactAccessory';
 import { EltakoMotionAccessory } from './EltakoMotionAccessory';
 import { EltakoDimmerAccessory } from './EltakoDimmerAccessory';
+import { EltakoGarageAccessory } from './EltakoGarageAccessory';
 import { EltakoLightSensorAccessory } from './EltakoLightSensorAccessory';
 import { EltakoSwitchAccessory } from './EltakoSwitchAccessory';
 import { EltakoTemperatureAndHumiditySensorAccessory } from './EltakoTemperatureAndHumiditySensorAccessory';
@@ -216,6 +217,10 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
             instance = new EltakoThermostatAccessory(this, existingAccessory);
             break;
           }
+          case 'eltako_fgtz': {
+            instance = new EltakoGarageAccessory(this, existingAccessory);
+            break;
+          }
         }
 
         if (instance) {
@@ -287,6 +292,10 @@ export class EltakoMiniSafe2Platform implements DynamicPlatformPlugin {
           case 'eltako_futh':
           case 'eltako_tf_thermo': {
             instance = new EltakoThermostatAccessory(this, accessory);
+            break;
+          }
+          case 'eltako_fgtz': {
+            instance = new EltakoGarageAccessory(this, accessory);
             break;
           }
         }
