@@ -1,4 +1,4 @@
-import { Service, PlatformAccessory, CharacteristicValue } from 'homebridge';
+import { Service, PlatformAccessory, CharacteristicValue, Perms } from 'homebridge';
 import { EltakoMiniSafe2Platform } from './platform';
 import { IUpdatableAccessory } from './IUpdatableAccessory';
 
@@ -6,7 +6,7 @@ export class EltakoThermostatAccessory implements IUpdatableAccessory {
   private service: Service;
   private hasHeatingCoolingState: boolean;
   private hasHumiditySensor: boolean;
-  private allowChange: boolean;
+  private isReadOnly: boolean;
   private setTemperatureCommand: string;
 
   constructor(
@@ -16,8 +16,10 @@ export class EltakoThermostatAccessory implements IUpdatableAccessory {
     const deviceType = accessory.context.device.info.data;
     this.hasHeatingCoolingState = deviceType === 'eltako_fhk';
     this.hasHumiditySensor = deviceType === 'eltako_futh' || deviceType === 'eltako_futh_old';
-    this.allowChange = deviceType !== 'eltako_tf_thermo';
+    this.isReadOnly = deviceType === 'eltako_tf_thermo';
     this.setTemperatureCommand = deviceType === 'a5-20-04' ? 'setTo' : 'tempTo';
+
+    const devicePermissions = this.isReadOnly ? [Perms.NOTIFY, Perms.PAIRED_READ] : null;
 
     this.accessory.getService(this.platform.Service.AccessoryInformation)!
       .setCharacteristic(this.platform.Characteristic.Manufacturer, accessory.context.device.info.vendor)
@@ -35,43 +37,36 @@ export class EltakoThermostatAccessory implements IUpdatableAccessory {
 
     if (this.hasHeatingCoolingState) {
       this.service.getCharacteristic(this.platform.Characteristic.CurrentHeatingCoolingState)
-        .onGet(this.getCurrentHeatingCoolingState.bind(this));
-
-      if (this.allowChange) {
-        this.service.getCharacteristic(this.platform.Characteristic.CurrentHeatingCoolingState)
-          .onSet(this.setCurrentHeatingCoolingState.bind(this))
-          .setProps({
-            validValues: [
-              this.platform.Characteristic.CurrentHeatingCoolingState.OFF,
-              this.platform.Characteristic.CurrentHeatingCoolingState.HEAT,
-            ],
-            maxValue: this.platform.Characteristic.CurrentHeatingCoolingState.HEAT,
-          });
-      }
-    }
-
-    this.service.getCharacteristic(this.platform.Characteristic.TargetHeatingCoolingState)
-      .onGet(this.getTargetHeatingCoolingState.bind(this));
-
-    if (this.allowChange) {
-      this.service.getCharacteristic(this.platform.Characteristic.TargetHeatingCoolingState)
-        .onSet(this.setTargetHeatingCoolingState.bind(this))
+        .onGet(this.getCurrentHeatingCoolingState.bind(this))
+        .onSet(this.setCurrentHeatingCoolingState.bind(this))
         .setProps({
           validValues: [
-            this.platform.Characteristic.TargetHeatingCoolingState.OFF,
-            this.platform.Characteristic.TargetHeatingCoolingState.HEAT,
+            this.platform.Characteristic.CurrentHeatingCoolingState.OFF,
+            this.platform.Characteristic.CurrentHeatingCoolingState.HEAT,
           ],
-          maxValue: this.platform.Characteristic.TargetHeatingCoolingState.HEAT,
+          maxValue: this.platform.Characteristic.CurrentHeatingCoolingState.HEAT,
+          perms: devicePermissions,
         });
     }
 
-    this.service.getCharacteristic(this.platform.Characteristic.TargetTemperature)
-      .onGet(this.getTargetTemperature.bind(this));
+    this.service.getCharacteristic(this.platform.Characteristic.TargetHeatingCoolingState)
+      .onGet(this.getTargetHeatingCoolingState.bind(this))
+      .onSet(this.setTargetHeatingCoolingState.bind(this))
+      .setProps({
+        validValues: [
+          this.platform.Characteristic.TargetHeatingCoolingState.OFF,
+          this.platform.Characteristic.TargetHeatingCoolingState.HEAT,
+        ],
+        maxValue: this.platform.Characteristic.TargetHeatingCoolingState.HEAT,
+        perms: devicePermissions,
+      });
 
-    if (this.allowChange) {
-      this.service.getCharacteristic(this.platform.Characteristic.TargetTemperature)
-        .onSet(this.setTargetTemperature.bind(this));
-    }
+    this.service.getCharacteristic(this.platform.Characteristic.TargetTemperature)
+      .onGet(this.getTargetTemperature.bind(this))
+      .onSet(this.setTargetTemperature.bind(this))
+      .setProps({
+        perms: devicePermissions,
+      });
 
     this.service.getCharacteristic(this.platform.Characteristic.TemperatureDisplayUnits)
       .onGet(this.getTemperatureDisplayUnits.bind(this));
