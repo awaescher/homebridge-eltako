@@ -19,7 +19,7 @@ export class EltakoThermostatAccessory implements IUpdatableAccessory {
     this.isReadOnly = deviceType === 'eltako_tf_thermo';
     this.setTemperatureCommand = deviceType === 'a5-20-04' ? 'setTo' : 'tempTo';
 
-    const devicePermissions = this.isReadOnly ? [Perms.NOTIFY, Perms.PAIRED_READ] : null;
+    const devicePermissions = this.isReadOnly ? [Perms.NOTIFY, Perms.PAIRED_READ] : null; // NOTIFY+PAIRED_READ makes the device read-only
 
     this.accessory.getService(this.platform.Service.AccessoryInformation)!
       .setCharacteristic(this.platform.Characteristic.Manufacturer, accessory.context.device.info.vendor)

@@ -23,7 +23,8 @@ export class EltakoGarageAccessory implements IUpdatableAccessory {
       .onGet(this.getCurrentDoorState.bind(this));
 
     this.service.getCharacteristic(this.platform.Characteristic.TargetDoorState)
-      .onGet(this.getTargetDoorState.bind(this));
+      .onGet(this.getTargetDoorState.bind(this))
+      .onSet(this.setTargetDoorState.bind(this));
 
     this.service.getCharacteristic(this.platform.Characteristic.ObstructionDetected)
       .onGet(this.getObstructionDetected.bind(this));
@@ -40,6 +41,11 @@ export class EltakoGarageAccessory implements IUpdatableAccessory {
     return this.getCurrentDoorState() === this.platform.Characteristic.CurrentDoorState.OPEN
       ? this.platform.Characteristic.TargetDoorState.OPEN
       : this.platform.Characteristic.TargetDoorState.CLOSED;
+  }
+
+  async setTargetDoorState(value: CharacteristicValue) {
+    const command = value === this.platform.Characteristic.TargetDoorState.OPEN ? 'open' : 'close';
+    await this.platform.miniSafe.sendGenericCommand(this.accessory.context.device.info.sid, command);
   }
 
   getObstructionDetected(): CharacteristicValue {
