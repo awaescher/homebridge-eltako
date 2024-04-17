@@ -137,7 +137,7 @@ I wrote this plugin for fun, use it at your own risk.
 # Building
 
 ``` bash
-npm version patch/minor/major
+npm version major/minor/patch
 npm run build
 npm publish
 git push 
