@@ -1,7 +1,7 @@
 {
   "displayName": "Homebridge Eltako for MiniSafe2",
   "name": "homebridge-eltako-minisafe2",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "description": "A Homebridge plugin to connect local Eltako installations to HomeKit. Requires a MiniSafe2.",
   "license": "Apache-2.0",
   "homepage": "https://github.com/awaescher/homebridge-eltako-minisafe2",
@@ -24,7 +24,13 @@
     "prepublishOnly": "npm run lint && npm run build"
   },
   "keywords": [
-    "homebridge-plugin", "enocean", "mediola", "eltako", "eltako14", "minisafe", "minisafe2"
+    "homebridge-plugin",
+    "enocean",
+    "mediola",
+    "eltako",
+    "eltako14",
+    "minisafe",
+    "minisafe2"
   ],
   "dependencies": {
     "axios": "^1.6.1"
