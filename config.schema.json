@@ -5,6 +5,13 @@
   "schema": {
     "type": "object",
     "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "Homebridge Eltako for MiniSafe2",
+        "required": true,
+        "description": "Plugin name as displayed in the homebridge log"
+      },
       "ip": {
         "title": "IP address of the MiniSafe2 in your local network.",
         "type": "string",
