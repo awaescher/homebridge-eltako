@@ -4,11 +4,16 @@ import { IUpdatableAccessory } from './IUpdatableAccessory';
 
 export class EltakoMotionAccessory implements IUpdatableAccessory {
   private service: Service;
+  private hasBrightnessSensor: boolean;
 
   constructor(
     private readonly platform: EltakoMiniSafe2Platform,
     public readonly accessory: PlatformAccessory,
   ) {
+
+    const deviceType = accessory.context.device.info.data;
+    this.hasBrightnessSensor = deviceType === 'eltako_motion' || deviceType === 'eltako_motion2';
+
     this.accessory.getService(this.platform.Service.AccessoryInformation)!
       .setCharacteristic(this.platform.Characteristic.Manufacturer, accessory.context.device.info.vendor)
       .setCharacteristic(this.platform.Characteristic.Model, accessory.context.device.info.data)
@@ -20,6 +25,11 @@ export class EltakoMotionAccessory implements IUpdatableAccessory {
 
     this.service.getCharacteristic(this.platform.Characteristic.MotionDetected)
       .onGet(this.getMotionDetected.bind(this));
+
+    if (this.hasBrightnessSensor) {
+      this.service.getCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel)
+        .onGet(this.getCurrentAmbientLightLevel.bind(this));
+    }
   }
 
   getMotionDetected(): CharacteristicValue {
@@ -30,7 +40,15 @@ export class EltakoMotionAccessory implements IUpdatableAccessory {
     return state?.state?.motion === 'true' || state?.state?.state === 'on';
   }
 
+  getCurrentAmbientLightLevel(): CharacteristicValue {
+    const state = this.platform.deviceStateCache.find(s => s.sid === this.accessory.context.device.info.sid);
+    return state?.state?.illumination ?? 0;
+  }
+
   update() {
     this.service.getCharacteristic(this.platform.Characteristic.MotionDetected).updateValue(this.getMotionDetected());
+    if (this.hasBrightnessSensor) {
+      this.service.getCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel).updateValue(this.getCurrentAmbientLightLevel());
+    }
   }
 }
