@@ -30,7 +30,7 @@ If you are not sure yet, here's what you need:
  - The devices you want to control need to be calibrated
  - The devices you want to control need to be known to an [Eltako MiniSafe2](https://www.eltako.com/en/product/professional-smart-home-en/controllers-and-gateways-enocean-zigbee-knx-dali-mqtt-and-much-more/minisafe2/) in your local network
    - The home setup you are using in your GFA5 app has to be saved to the MiniSafe2 [(see here)](<docs/GFA5 Controller Settings.png>)
-- The plugin needs the HomeSafe2 [ip address](<docs/GFA5 Controller Settings.png>) and the password to access it
+- The plugin needs the MiniSafe2 [ip address](<docs/GFA5 Controller Settings.png>) and the password to access it
 
 If you don't have a MiniSafe2 in your network, this plugin won't be able to control any devices. Ask your electrician how to get a MiniSafe2 up and running in your environment.
 
