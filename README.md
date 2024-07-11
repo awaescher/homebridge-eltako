@@ -16,7 +16,7 @@ Background image by [R Architecture on Unsplash](https://unsplash.com/de/fotos/b
 # Why?
 
 Bringing your devices to HomeKit will open up the door to a lot of features without any additional effort:
-- control your devices from anywhere in the world without using a VPN and without opening any router ports
+- control your devices from anywhere in the world without using VPN, without opening any router ports and without Eltako Cloud
 - control your devices with Siri on your iPhone, iPad, Mac, Apple Watch, HomePod, Apple TV etc.
 - control your devices with HomeKit scenes and combine them with other HomeKit devices
 - control your devices from [widgets](https://support.apple.com/en-us/HT207122) and [shortcuts](https://support.apple.com/en-us/guide/shortcuts/welcome/ios)
